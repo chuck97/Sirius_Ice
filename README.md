@@ -1,2 +1,2 @@
 # Sirius_Ice
-Practical problems for ice dynamics course
+Here you can find problems discription for Sirius Course
