@@ -1,4 +1,4 @@
-The first problem is to construct triangulations of the square and the sphere for further computations.
+The first problem is to construct **triangulations of the square and the sphere** for further computations.
 
 Before building all code in directories make sure that you have build INMOST library (using intel compilers) and Ani2D/Ani3D libraries (using default gcc, g++ and gfortran compilers). 
 
