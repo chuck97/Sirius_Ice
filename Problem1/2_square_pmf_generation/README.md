@@ -26,5 +26,7 @@ cmake --build .
 ``` 
 
 **The output of the program**: 
-square + specified postfix +.vtk on specified folder (you can visualize the mesh using ParaView); \
+
+square + specified postfix +.vtk on specified folder (you can visualize the mesh using ParaView); 
+
 square + specified postfix +.pmf on specified folder (internal INMOST mesh format - will be used further).
