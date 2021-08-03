@@ -1,4 +1,4 @@
-Here is code that performs conversion the sphere tetration in Ani3D internal format to .txt files.
+Here is code that performs **conversion the sphere tetration in Ani3D internal format to .txt files**.
 
 1) You need to specify configuration file (./config.txt):
 
@@ -19,7 +19,7 @@ cmake --build .
 ./OUT_TO_TXT ../config.txt
 ``` 
 
-The output of the program:
+**The output of the program**:
 
 "vrt" + prefix + ".txt"  - file containing node coordinates;
 
