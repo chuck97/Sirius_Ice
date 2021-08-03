@@ -319,9 +319,9 @@ int main(int argc, char* argv[])
 	ani::graph_(&nv, vrt, &nt, tri, ps_name_char);
 	
 	WriteTrInfoToFile(nv, vrt, nt, tri, nb, bnd,
-					  output_folder_path + "/vrt.txt",
-					  output_folder_path + "/tri.txt",
-					  output_folder_path + "/bnd.txt");
+					  output_folder_path + "vrt.txt",
+					  output_folder_path + "tri.txt",
+					  output_folder_path + "bnd.txt");
 	
 	deallocate2d<double>(bv2d, Nbv);
     deallocate1d<double>(bv);
