@@ -1,6 +1,6 @@
 CPPC = g++
 CFLG = -c -Wall -std=c++1z
-LPATH = /data90t/geosci/spetrov/SIRIUS/Sirius_Ice/AniLibs/Ani2D/ani2D-3.1/lib
+LPATH = ...
 LIBS = -laft2D-3.1 -lview2D-3.1 -lgfortran -lm
 
 triangulation: main.o
