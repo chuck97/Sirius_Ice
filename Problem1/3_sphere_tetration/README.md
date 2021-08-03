@@ -1,4 +1,4 @@
-Here is code that performs sphere tetration using Ani3D lib. 
+Here is code that performs **sphere tetration** using Ani3D lib. 
 
 Before launching make sure that you have built Ani3D library.
 
@@ -16,6 +16,6 @@ cmake --build .
 ``` 
 would make Earth sphere tetration with 200km edges size and produce file mesh200km.out in build directory). 
 
-The output of the program:
+**The output of the program**:
 "mesh" + prefix + ".out"  - the internal Ani3D format with tetration;
 
