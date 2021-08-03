@@ -17,5 +17,6 @@ cmake --build .
 would make Earth sphere tetration with 200km edges size and produce file mesh200km.out in build directory). 
 
 **The output of the program**:
+
 "mesh" + prefix + ".out"  - the internal Ani3D format with tetration;
 
