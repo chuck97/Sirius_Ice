@@ -13,7 +13,6 @@ third line: output folder for generated .txt files (I recommend use full path to
 cd build
 cmake ..
 cmake --build .
-
 ```
 3) To run the program you need to pass the path to config.txt file, e.g.:
 ```
