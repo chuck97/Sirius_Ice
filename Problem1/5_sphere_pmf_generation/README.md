@@ -1,4 +1,4 @@
-Here is code that creates the .pmf (internal INMOST format) and .vtk (universal format for unstructured meshes) for generated sphere triangulation. 
+Here is code that creates the **.pmf (internal INMOST format) and .vtk (universal format for unstructured meshes) for generated sphere triangulation**. 
 
 Before launching make sure that you have built INMOST library. 
 1) You need to specify location of INMOST SOURSE (line 10) and INMOST BUILD (line 11) directories in CMakeLists.txt. 
