@@ -1,4 +1,5 @@
-# Sirius_Ice
+# Sirius Ice Dynamics project
+
 Here you can find problems discription for Sirius Course
 
 *Problem 1:* Sphere and square triangulation;
