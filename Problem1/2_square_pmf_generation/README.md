@@ -1,4 +1,4 @@
-Here is code that creates the **.pmf (internal INMOST format)** and **.vtk (universal format for unstructured meshes) for generated mesh **. 
+Here is code that creates the **.pmf (internal INMOST format)** and **.vtk (universal format for unstructured meshes) for generated mesh**. 
 
 Before launching make sure that you have built INMOST library.
 
