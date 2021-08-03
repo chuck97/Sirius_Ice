@@ -1,0 +1,6 @@
+This is a modified version of the CGM code from
+http://sigma.mcs.anl.gov/cgm-library/
+
+This version of CGM library is based on CGM 15.1 version
+with addition of CMakeLists files for Ani3D compatibility.
+

@@ -1,0 +1,15 @@
+# Make sure the compiler can find include files
+include_directories(${INCLUDE_OUTPUT_DIRECTORY})
+
+# Make sure the linker can find the libraries once it is built
+link_directories(${LIBRARY_OUTPUT_DIRECTORY})
+
+# Add executable called "multi_HybridMFEM.exe", link and install
+set(TEST1 multi_HybridMFEM${SUFFICS_EXE})
+add_executable(${TEST1} "main.f" "forlibfem.f")
+target_link_libraries(${TEST1} fem3D-${VERSION} 
+                               lmr3D-${VERSION} mba3D-${VERSION} 
+                              view3D-${VERSION} ilu-${VERSION} ${LAPACK_LIBS}) 
+install(TARGETS ${TEST1} DESTINATION ${RUNTIME_OUTPUT_DIRECTORY})
+
+

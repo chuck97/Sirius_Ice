@@ -1,0 +1,50 @@
+gui_glut - interactive 3D surface mesh generator (glut version)
+
+This package is based on freeglut library (http://freeglut.sourceforge.net/).
+In order to use this package, make sure freeglut is properly installed on your system.
+If your library is installed in non-standard place, the correct paths should be added into Makefile
+
+
+
+Usage: gui_glut.exe [+csp] [params]
+Press 'h' for help
+
+"+s r x y z r p q M" - M-mesh for a sphere with radius r, centered at (x, y, z) and rotated by angles r, p, q
+"+c r h x y z r p q M" - M-mesh for a cylinder with radius r, height h, centered at (x, y, z) and rotated by angles r, p, q
+"+p a b c x y z a b c M" - M-mesh for a parallelepiped with radius r, centered at (x, y, z) and rotated by angles r, p, q
+
+Usage example:
+./gui_glut.exe    
+   prints help message
+
+./gui_glut.exe +s 1.5 0 0 1 0 0 0 0.3 +c 0.5 5 0 0 -1 0.3 0 0.5 0.3
+   creates a 0.3-mesh for sphere with radius 1.5, centered at (0, 0, 1) and rotated by angles 0, 0, 0
+   and a 0.3-mesh for cylinder with radius 0.5, height 5, centered at (0, 0, -1) and rotated by angles 0.3, 0 and 0.5
+
+./gui_glut.exe +s 1.5 0 0 1 0 0 0 0.2 +p 0.5 0.6 2 0 -1 0 0.3 0 0.1 0.2
+   creates a 0.2-mesh for the same sphere
+   and a 0.2-mesh for parallelepiped with sides 0.5, 0.6 and 2, centered at (0, -1, 0) and rotated by angles 0.3, 0 and 0.1
+
+W:w write info frt-gui.frt, then you can use ./main_aft.exe frt-gui.frt to build tetra
+Esc,q:  exit
+h:      this help
+left  mouse button, arrow keys: rotate
+right mouse button, w,a,s,d: move
+Z,z: zoom
+n:      unite
+N:      intersect
+M,m:    substract
+V:      draw points
+v:      draw vertices
+E:      draw edges
+e:      draw face edges
+f:      draw faces
+o:      back offset
+I,i:    line width
+U,u:    point size
+P:      save screenshot to eps file
+p:      save screenshot to pdf file
+C:      save camera position and direction
+c:      load camera position and direction
+B:      benchmark
+

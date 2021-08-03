@@ -1,0 +1,51 @@
+AFTHOME  := $(shell cd ../../;pwd)
+include $(AFTHOME)/src/aniAFT/src/cflags.make
+
+ifdef CASROOT
+
+all: help
+
+lib:
+	@if test ! -f Makefile ; then \
+	CFLAGS="$(CFLAGS)" CXXFLAGS="$(CXXFLAGS)" ./configure --prefix=$(AFTHOME) --libdir=$(AFTHOME)/lib/CGM --includedir=$(AFTHOME)/include/CGM --with-occ=$(CASROOT) --disable-dependency-tracking --enable-silent-rules; \
+	fi; \
+	make -f Makefile; \
+	make -f Makefile install;
+
+clean:
+	@if test -f Makefile ; then \
+	make -f Makefile clean; \
+	fi;
+
+purge:
+	@if test -f Makefile ; then \
+	make -f Makefile clean uninstall distclean; \
+	fi;
+
+help:
+	@echo "make {lib|clean|purge|help}"
+	@echo " "
+	@echo "   lib   - installs the package CGM"
+	@echo "   clean - clean the package"
+	@echo "   help  - print this message"
+	@echo " "
+
+else
+all: help
+
+lib:
+	@echo CASROOT is unset, OpenCASCADE support is disabled
+
+clean:
+
+purge:
+
+help:
+	@echo "make {lib|clean|purge|help}"
+	@echo " "
+	@echo "   lib   - installs the package CGM"
+	@echo "   clean - clean the package"
+	@echo "   help  - print this message"
+	@echo " "
+
+endif

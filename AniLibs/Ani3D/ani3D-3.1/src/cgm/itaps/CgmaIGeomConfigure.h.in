@@ -1,0 +1,26 @@
+
+#ifndef CGMA_IGEOM_EXPORTS_H
+#define CGMA_IGEOM_EXPORTS_H
+
+#cmakedefine CGMA_IGEOM_BUILD_SHARED_LIBS
+
+#if defined(CGMA_IGEOM_BUILD_SHARED_LIBS)
+#if defined(iGeom_EXPORTS)
+# if defined(_WIN32)
+#  define CGMA_IGEOM_EXPORT __declspec(dllexport)
+# elif defined(__GNUC__) && __GNUC__ >= 4
+#  define CGMA_IGEOM_EXPORT __attribute__ ((visibility("default")))
+# endif
+#else
+# if defined(_WIN32)
+#  define CGMA_IGEOM_EXPORT __declspec(dllimport)
+# endif
+#endif
+#endif
+
+#ifndef CGMA_IGEOM_EXPORT
+#define CGMA_IGEOM_EXPORT
+#endif
+
+#endif // CGMA_IGEOM_EXPORTS_H
+

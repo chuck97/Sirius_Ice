@@ -1,0 +1,59 @@
+A brief introduction to Open CASCADE GUI DRAWEXE.
+
+It is used to produce a .brep file:
+
+  DRAWEXE
+
+A new window with a menu will appear, while terminal could be used to execute commands.
+First command in DRAWEXE should be 'pload' to load main modules.
+
+   pload
+
+Use command 'help' to get the list of available commands, and 'help command' to print help 
+on the specific command.
+
+For visualization use menu 'Views' or commands:
+
+   axo    // One axonometric view
+   pers   // One perspective view
+   mu4    // Four views layout
+
+   zoom z // change zoom
+   fit    // change zoom to fit image
+
+   l, r, u, d      // rotate left, right, up, down
+   pl, pr, pu, pd  // panning left, right, up, down
+
+For creating objects use commands like:
+
+   box name x1 y1 z1 dx dy dz
+   psphere name R
+   pcylinder name R H
+
+For boolean operation on two shaped use commands:
+
+   bfuse R a b
+   bcommon R a b
+   bcut R a b
+
+Command 'source file' may be used to read commands from file.
+Command 'save shape file.brep' may be used to save shape to file.
+
+
+Example for DRAWEXE (start from directory ani3D/bin):
+
+   pload                     // this loads modules
+   mu4                       // opens view windows
+   source ../data/test.tcl   // this generates simple model r
+   save r tmp.brep           // save this model to file tmp.brep
+   exit                      // exit from DRAWEXE
+
+.brep files could be used with CadToTet_aft.exe tutorial:
+
+./CadToTet_aft.exe tmp.brep
+
+
+
+
+
+

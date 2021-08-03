@@ -1,0 +1,101 @@
+project(Cholla)
+
+set(cholla_srcs
+  AllocMemManagersCholla.cpp
+  Cholla.cpp
+  ChollaCurve.cpp
+  ChollaEngine.cpp
+  ChollaEntity.cpp
+  ChollaPoint.cpp
+  ChollaSkinTool.cpp
+  ChollaSurface.cpp
+  ChollaVolume.cpp
+  ChordalAxis.cpp
+  CubitFacet.cpp
+  CubitFacetData.cpp
+  CubitFacetEdge.cpp
+  CubitFacetEdgeData.cpp
+  CubitPoint.cpp
+  CubitPointData.cpp
+  CubitQuadFacet.cpp
+  CubitQuadFacetData.cpp
+  CurveFacetEvalTool.cpp
+  FacetDataUtil.cpp
+  FacetEntity.cpp
+  FacetEvalTool.cpp
+  GeoNode.cpp
+  GeoTet.cpp
+  LoopParamTool.cpp
+  PointGridSearch.cpp
+  PointLoopFacetor.cpp
+  TDChordal.cpp
+  TDFacetBoundaryEdge.cpp
+  TDFacetBoundaryPoint.cpp
+  TDFacetboolData.cpp
+  TDGeomFacet.cpp
+  debug.cpp)
+
+set(cholla_headers
+  BoundaryConstrainTool.cpp
+  BoundaryConstrainTool.hpp
+  Cholla.h
+  ChollaCurve.hpp
+  ChollaEngine.hpp
+  ChollaEntity.hpp
+  ChollaPoint.hpp
+  ChollaSkinTool.hpp
+  ChollaSurface.hpp
+  ChollaVolume.hpp
+  ChordalAxis.hpp
+  CubitFacet.hpp
+  CubitFacetData.hpp
+  CubitFacetEdge.hpp
+  CubitFacetEdgeData.hpp
+  CubitPoint.hpp
+  CubitPointData.hpp
+  CubitQuadFacet.hpp
+  CubitQuadFacetData.hpp
+  CurveFacetEvalTool.hpp
+  FacetDataUtil.hpp
+  FacetEntity.hpp
+  FacetEvalTool.hpp
+  FacetorTool.cpp
+  FacetorTool.hpp
+  FacetorUtil.cpp
+  FacetorUtil.hpp
+  GeoNode.hpp
+  GeoTet.hpp
+  LoopParamTool.hpp
+  PointGridSearch.hpp
+  PointLoopFacetor.hpp
+  TDChordal.hpp
+  TDDelaunay.cpp
+  TDDelaunay.hpp
+  TDFacetBoundaryEdge.hpp
+  TDFacetBoundaryPoint.hpp
+  TDFacetboolData.hpp
+  TDGeomFacet.hpp
+  TetFacetorTool.cpp
+  TetFacetorTool.hpp
+  debug.hpp)
+
+cgm_source_interface(all_cholla_srcs
+  cholla_srcs)
+  #cholla_headers) # FIXME: template recompilation
+
+add_library(cholla INTERFACE)
+target_sources(cholla
+  INTERFACE
+    ${all_cholla_srcs})
+target_include_directories(cholla
+  INTERFACE
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
+    "$<INSTALL_INTERFACE:include>")
+target_link_libraries(cholla
+  INTERFACE
+    cubit_util)
+cgm_install_headers(${cholla_headers})
+
+set_property(GLOBAL APPEND
+  PROPERTY cgm_libs
+  cholla)

@@ -1,0 +1,4 @@
+cmake  \
+  -DENABLE_OPENCASCADE:BOOL=yes  \
+  -DOPENCASCADE_DIR:PATH=${CASROOT}  \
+  ../

@@ -1,0 +1,6 @@
+This third party code has been modified to fit the needs 
+of our package. The modifications touched only high-level
+interface, more precisely, the way we create libraries.
+
+See READMEs in subdirectories and doc/user_guide_umfpack.pdf
+for more details.
