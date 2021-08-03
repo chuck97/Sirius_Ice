@@ -1,7 +1,10 @@
-Here is code that performs sphere tetration using Ani3D lib. \
-Before launching make sure that you have built Ani3D library. \
-1) You need to specify location of ani3d library folder in CMakeLists.txt (line 7); \
-2) Build code in "build" directory
+Here is code that performs sphere tetration using Ani3D lib. 
+
+Before launching make sure that you have built Ani3D library.
+
+1) You need to specify location of ani3d library folder in CMakeLists.txt (line 7);
+
+3) Build code in "build" directory
 ``` 
 cd build
 cmake ..
