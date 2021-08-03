@@ -5,7 +5,6 @@ Before building all code in directories make sure that you have build INMOST lib
 The best output is generating files:
 
 /MESHES/square8km.pmf 
-
 /MESHES/square4km.pmf 
 
 /MESHES/square2km.pmf 
