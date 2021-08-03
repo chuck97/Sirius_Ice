@@ -11,7 +11,7 @@ fourth - eighth line: coordinates in meters of square verticies (we will use 512
 
 3) run code and provide .exe with configuration file: ./triangulation.exe ./square.txt
 
-The output of the programm: 
+The output of the program: 
 picture of domain (.ps file),
 vrt.txt - the file containing the coordinates of verts in meters;
 tri.txt - the file containing the adjacency list for triangles;

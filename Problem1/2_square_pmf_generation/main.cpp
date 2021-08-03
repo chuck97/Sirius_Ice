@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
 
     std::cout << "Start to read mesh!" << std::endl;
 
-    // Read verticies
+    // read verticies
     file.open(name_vrt);
     M_Assert((file.is_open()), "can not open vrt file");
 
@@ -118,7 +118,7 @@ int main(int argc, char* argv[])
     }
     file.close();
 
-    // Read triangles
+    // read triangles
     file.open(name_tri);
     M_Assert((file.is_open()), "can not open tri file");
     file >> tmp_STR;
@@ -144,10 +144,9 @@ int main(int argc, char* argv[])
     }
     file.close();
     
-    ////////////////////////////////////// load and repartition mesh //////////////////////////
-    m->Save(name_output_folder + "/mesh" + name_postfix + ".pmf");
-    m->Save(name_output_folder + "/mesh" + name_postfix + ".vtk");
-    //////////////////////////////////create discretization/////////////////////////////
+    // save mesh
+    m->Save(name_output_folder + "square" + name_postfix + ".pmf");
+    m->Save(name_output_folder + "square" + name_postfix + ".vtk");
 
     return 0;
 }
