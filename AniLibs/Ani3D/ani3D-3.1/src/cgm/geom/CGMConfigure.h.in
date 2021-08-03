@@ -1,7 +1,0 @@
-#ifndef CGMConfigure_h
-#define CGMConfigure_h
-
-#cmakedefine CGM_KCM
-#cmakedefine KCM_MESH_TO_GEOM
-
-#endif

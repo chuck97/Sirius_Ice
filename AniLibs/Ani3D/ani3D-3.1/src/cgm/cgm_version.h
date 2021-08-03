@@ -1,2 +1,0 @@
-#define  CGM_MAJOR_VERSION  15
-#define  CGM_MINOR_VERSION  0

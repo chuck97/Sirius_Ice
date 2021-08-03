@@ -1,9 +1,0 @@
-cmake  \
-  -DENABLE_GUI_GLUT:BOOL=yes  \
-  ../
-
-# In case of CMAKE problems modify and add the following lines 
-# to the "cmake" command line.
-
-#  -DGLUT_Xmu_LIBRARY:FILEPATH=/usr/lib64/libglut.so.3  \
-#  -DGLUT_INCLUDES:PATH=/usr/include  \

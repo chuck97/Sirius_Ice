@@ -1,3 +1,0 @@
-       Logical   lOpenTriag,          lCloseTriag
-       Parameter(lOpenTriag = .TRUE., lCloseTriag = .FALSE.)
-

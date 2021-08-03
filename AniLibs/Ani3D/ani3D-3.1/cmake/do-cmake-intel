@@ -1,6 +1,0 @@
-cmake  \
-  -DCMAKE_Fortran_COMPILER:FILEPATH=/opt/intel/bin/ifort  \
-  -DCMAKE_C_COMPILER:FILEPATH=/opt/intel/bin/icc  \
-  -DCMAKE_CXX_COMPILER:FILEPATH=/opt/intel/bin/icpc  \
-  ../
-
