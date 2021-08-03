@@ -2,11 +2,11 @@ Here is code that performs conversion the sphere tetration in Ani3D internal for
 
 1) You need to specify configuration file (./config.txt):
 
-first line: path to previously generated .out file
+*first line*: path to previously generated .out file
 
-second line: postfix to the file
+*second line*: postfix to the file
 
-third line: output folder for generated .txt files (I recommend use full path to build folder in current directory)
+*third line*: output folder for generated .txt files (I recommend use full path to build folder in current directory)
 
 2) Build code in "build" directory
 ``` 
