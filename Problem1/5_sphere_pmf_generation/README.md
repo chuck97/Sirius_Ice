@@ -23,7 +23,7 @@ fourth line: specify postfix (I recomend use mesh resolution)
 ./GRID_TO_PMF ../config.txt
 ``` 
 
-The output of the program:
+**The output of the program**:
 
 sphere + specified postfix +.vtk in specified folder (you can visualize the mesh using ParaView); 
 
