@@ -10,13 +10,13 @@ cmake --build .
 ``` 
 3) After building the code you need to specify configuration file (config.txt) 
 
-first line: specify full path to nodes (smth+vrt.txt)
+*first line*: specify full path to nodes (smth+vrt.txt)
 
-second line: specify full path to triangles (smth + vrt.txt)
+*second line*: specify full path to triangles (smth + vrt.txt)
 
-third line: specify output folder for .pmf and .vtk file containing final sphere triangulation (I recomend use MESH folder in root/Problem1)
+*third line*: specify output folder for .pmf and .vtk file containing final sphere triangulation (I recomend use MESH folder in root/Problem1)
 
-fourth line: specify postfix (I recomend use mesh resolution)
+*fourth line*: specify postfix (I recomend use mesh resolution)
  
 4) run the code and provide it with configuration file, e.g.
 ``` 
