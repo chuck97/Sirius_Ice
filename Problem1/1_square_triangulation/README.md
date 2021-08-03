@@ -1,4 +1,4 @@
-Here is code that performs square triangulation using Ani2D lib. 
+Here is code that performs **square triangulation using Ani2D** lib. 
 
 Before launching make sure that you have built Ani2D library. 
 
@@ -24,7 +24,7 @@ and paste it after whitespace. Every folder path should be ended by "/";
 ```
 ./triangulation.exe ./square.txt 
 ```
-The output of the program: 
+**The output of the program**: 
 
 picture of domain (.ps file); 
 
