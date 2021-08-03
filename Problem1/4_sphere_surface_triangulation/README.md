@@ -1,4 +1,4 @@
-Here is code that performs converts sphere tetration in Ani3D internal format to .txt files.
+Here is code that performs conversion the sphere tetration in Ani3D internal format to .txt files.
 
 1) You need to specify configuration file (./config.txt):
 
