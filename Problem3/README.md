@@ -6,7 +6,7 @@ The folder consists of:
 
 *Problem3.pdf* - the description of problem (will be discussed in class);
 
-*./config* - folder containing the example of configuration files (and launcher);
+*./configs* - folder containing the example of configuration files (and launcher);
 
 Before building the code make sure, that you have built INMOST with Petsc/Parmetis support and also cloned nlohmann_json!
 
