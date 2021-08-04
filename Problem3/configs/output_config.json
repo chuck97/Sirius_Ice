@@ -1,0 +1,16 @@
+{
+	"pvtu output directory": "/data90t/geosci/spetrov/DYNAMICS_TEST_NEW/build/screenshots2km/",
+	"every nth screenshot": 1,
+	"verbose output": true,
+	"displayed variables":
+	[
+		"ice mass",
+		"ice height",
+		"ice concentration",   
+		"ice velocity",            
+		"ice pressure",              
+		"air velocity",  
+		"water velocity",
+		"water level"     
+	]
+}

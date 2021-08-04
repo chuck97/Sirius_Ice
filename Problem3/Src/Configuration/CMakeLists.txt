@@ -1,0 +1,12 @@
+set(
+	SOURCE
+	${SOURCE}
+	${CMAKE_CURRENT_SOURCE_DIR}/advection_config.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/mesh_config.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/momentum_config.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/output_config.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/model_config.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/dynamics_test_config.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/config.cpp
+	PARENT_SCOPE
+)

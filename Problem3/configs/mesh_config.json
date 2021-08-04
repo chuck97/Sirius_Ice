@@ -1,0 +1,5 @@
+{
+	"mesh": "/data90t/geosci/spetrov/DYNAMICS_TEST/SQUARE_GRIDGEN/MESHES/pmf/square2km.pmf",
+	"surface type": "plane",
+	"coords type": "Cartesian2D"
+}

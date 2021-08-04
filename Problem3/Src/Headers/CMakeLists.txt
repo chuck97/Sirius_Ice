@@ -1,0 +1,24 @@
+set(
+	HEADER
+        ${HEADER}
+        ${CMAKE_CURRENT_SOURCE_DIR}/external.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/string_trim.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/function.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/numerical_integration.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/enum_classes.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/forcing_link_tables.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/errors.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/config.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/interpolation.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/coords_rotation.h
+	${CMAKE_CURRENT_SOURCE_DIR}/mat_vec.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/mesh.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/fct.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/INMOST_ICE.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/dynamics_test.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/advection_assembling.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/advection.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/momentum_assembling.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/momentum.h
+        PARENT_SCOPE
+)

@@ -1,0 +1,9 @@
+{
+	"mEVP":
+	{
+		"alpha": 500.0,
+		"beta": 500.0,
+		"number of iterations": 100
+	},
+	"boundary conditions": "no-slip"
+}
