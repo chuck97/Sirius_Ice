@@ -1,6 +1,6 @@
 The second problem is to test different types of Finite Element Taylor-Galerkin class advection schemes on sphere.
 
-The file consists of:
+The folder consists of:
 
 1) *./Src* - the folder with source code for advection test;
 2) *Problem2.pdf* - the description of problem (will be discussed in class);
