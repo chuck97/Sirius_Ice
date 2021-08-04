@@ -8,7 +8,7 @@ The folder consists of:
 4) *launcher.qs* - the example of launching file for slurm queue;
 5) *PlanePics.ipynb* - the example of python code (should be opened with jupyter notebook) that makes plane pictures (you can use it, or write your own).
 
-Before building the code make sure, that you have built INMOST with Petsc/Parmetis support!
+Before building the code make sure, that you have built INMOST with Petsc/Parmetis support and also cloned nlohmann_json!
 
 To build the code, edit your *./Src/CMakeLists.txt*. The instructions of running the code are given in *Problem2.pdf*.
 
