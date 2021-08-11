@@ -1,21 +1,23 @@
 cmake_minimum_required(VERSION 3.17.0)
 
-project(transport)
+project(run)
 enable_language(CXX C)
 set(CMAKE_CXX_COMPILER mpiicpc)
 set(CMAKE_C_COMPILER mpiicc)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(INMOST_SRC "...")
-set(INMOST_BUILD "...")
-set(PETSC_DIR "...")
-set(PETSC_ARCH "...")
-set(JSON_DIR "...")
+set(INMOST_BUILD_ARCH "INMOST-intel-build")
+
+set(INMOST_SRC "/data90t/geosci/spetrov/INMOST_BUILD_PVTU/INMOST")
+set(INMOST_BUILD "/data90t/geosci/spetrov/INMOST_BUILD_PVTU/${INMOST_BUILD_ARCH}")
+set(PETSC_DIR "/data90t/geosci/spetrov/INMOST_BUILD_PVTU/petsc-3.5.2")
+set(PETSC_ARCH "linux-intel-debug")
+set(JSON_DIR "/data90t/geosci/spetrov/json_lib/nlohmann_json_cmake_fetchcontent/include")
 
 include_directories(${INMOST_SRC}/Source/Headers)
 include_directories(${INMOST_BUILD})
-include_directories(${JSON_DIR})
+include_directories(${JSON_DIR}/)
 
 
 include_directories(${PETSC_DIR}/include)
